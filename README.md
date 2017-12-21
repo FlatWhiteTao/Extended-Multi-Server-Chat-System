@@ -22,6 +22,7 @@ If a chat server crashes or stops responding, other chat servers should detect t
 You do not need to handle failures for the chat clients. Clients are simply getting disconnected in the case of a chat server crash. The chatrooms and other data associated to the user will be deleted in a similar way to the previous project.
 
 3.Scalability
+
 For the sake of scalability, your system has this feature that the system admin can add new servers to the system manually.
 The newly added servers become fully functional components of the chat system and clients can directly connect to these chat servers. Thus, these servers participate in all the Lock and Release communications among chat servers to handle client identities and chat rooms.
 • Recommendation: Add new JSON messages to the communication protocol of servers to support this feature that a new server can introduce itself to the system.
